@@ -4,7 +4,7 @@
 
 # Site
 title: John White
-subtitle: Know Yourself
+subtitle: Know Yourself. Ceaseless Selfimprovement.
 description: Share what I learn
 author: John White
 language: 
@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: jacman
+theme: freemind
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
