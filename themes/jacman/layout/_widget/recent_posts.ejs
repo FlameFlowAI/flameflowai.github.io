@@ -1,0 +1,12 @@
+<% if (site.posts.length){ %>
+<div class="linkslist">
+  <h3 class="asidetitle"><%= __('recent_posts') %><a href="/archives" class="more-link"><%= __('More') %>...</a></h3>
+  <ul>
+    <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
+      <li>
+        <a href="<%= config.root %><%= post.path %>"><%= post.title %></a>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+<% } %>

@@ -16,6 +16,8 @@ menu:
 widgets: 
 - category
 - tag
+- calendar
+- recent_posts
 - links
 - douban
 - rss
