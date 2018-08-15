@@ -124,12 +124,25 @@ git config --global user.name "your name"
 
     deploy:  
         type: git  
-        repository: git@github.com:githut账号名/githut账号名.github.io.git
+	repository:  https://github.com/github账号名/github账号名.github.io.git
         branch: master
+    
+    # 例子	
+    deploy:
+        type:  git
+        repository:  https://github.com/Johnwhite-leaf/Johnwhite-leaf.github.io.git
+        branch:  master
+
+      
 
 ### 部署博客到githut pages
 ```
 hexo d
+```
+
+### 在Hexo 3.0版本后deploy git 被分开的，所以需要安装，安装命令如下
+```
+npm install hexo-deployer-git --save
 ```
 
 不出问题的话就可以在浏览器中通过http://githut用户名.github.io 访问刚刚部署的博客，比如我的githut账号名为Johnwhite-leaf，对应网址 http://johnwhite-leaf.github.io 。hexo d 的完整命令是hexo deploy

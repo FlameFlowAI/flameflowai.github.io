@@ -69,10 +69,11 @@ theme: jacman
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: git@github.com:Johnwhite-leaf/Johnwhite-leaf.github.io.git
-  branch: master
-  
+  type:  git
+  repository:  https://github.com/Johnwhite-leaf/Johnwhite-leaf.github.io.git
+  branch:  master
+
+# repository:  git@github.com:Johnwhite-leaf/Johnwhite-leaf.github.io.git
 # Others
 index_generator:
   per_page: 8 ##首页默认10篇文章标题 如果值为0不分页
