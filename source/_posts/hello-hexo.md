@@ -1,9 +1,11 @@
+
+---
 title: Hello Hexo
 date: 2015-05-16 20:00:00
-categories:
- - hexo
-tags:
- - hexo
+categories: hexo
+
+tags: hexo
+
 ---
 这是hexo自带的示例子文章，原文英文，稍作翻译。
 欢迎使用 [Hexo](http://hexo.io/) ！这是你的第一篇文章。 更多信息请看Hexo [帮助文档](http://hexo.io/docs/) 。 如果你在使用Hexo过程中有任何问题, 你能在Hexo [故障排除](http://hexo.io/docs/troubleshooting.html) 找到答案，或者在 [GitHub](https://github.com/hexojs/hexo/issues) 直接询问Hexo作者。

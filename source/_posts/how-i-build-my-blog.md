@@ -1,9 +1,12 @@
+---
 title: 怎么搭建自己的博客？
 date: 2015-06-15 09:31:11
-categories:
- - hexo
+categories: hexo
+
 tags: hexo
+
 ---
+
 前面写了一篇文章“[为什么写博客？](https://johnwhite-leaf.github.io/2015/06/07/why-i-blog/)”，梳理了自己写博客的动机和目的，而这篇文章主要将自己搭建博客的过程记录下来。
 
 在我搭建这个博客之前，我有时会在QQ空间上写日志，但QQ空间的分享只限在QQ空间好友之间，偶尔也发微博，但微博所能承载的信息非常有限，也尝试过在CSDN写博客，但自主控制权非常有限，也特意在本地电脑上搭建[WordPress](http://cn.wordpress.org/)博客系统，但WordPress是动态网页部署的条件比较苛刻，而且也很臃肿，我只是想简单地写博客而已，不想搞得那么复杂，总之这些方式都有这样那样的局限性，都不能让自己完全掌控自己的博客。
@@ -64,9 +67,9 @@ hexo init 是作用是生成了hexo的一些基本目录，npm install的作用�
 
 ### hexo server
 在Hexo 3.0 后server被单独出来了，需要安装server，安装的命令如下
-  
+
 ```
-npm install hexo-server –-save 
+npm install hexo-server --save 
 ```
 
 ### 通过hexo生成博客
@@ -124,7 +127,7 @@ git config --global user.name "your name"
 
     deploy:  
         type: git  
-	repository:  https://github.com/github账号名/github账号名.github.io.git
+    repository:  https://github.com/github账号名/github账号名.github.io.git
         branch: master
     
     # 例子	
@@ -133,7 +136,8 @@ git config --global user.name "your name"
         repository:  https://github.com/Johnwhite-leaf/Johnwhite-leaf.github.io.git
         branch:  master
 
-      
+
+​      
 
 ### 部署博客到githut pages
 ```

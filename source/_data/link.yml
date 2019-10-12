@@ -1,0 +1,13 @@
+class:
+  class_name: 友情鏈接
+  link_list:
+    1:
+      name: Mind hacks
+      link: http://mindhacks.cn/
+      avatar: https://mindhacks.cn/avatar.png
+      descr: 思维改变生活
+    2:
+      name: 褪墨・时间管理
+      link: http://www.mifengtd.cn/
+      avatar: https://www.mifengtd.cn/avatar.png
+      descr: 把事情做到更好！ 
