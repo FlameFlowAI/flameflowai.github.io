@@ -60,7 +60,7 @@ social:
 # Algolia search
 # ---------------
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
 
@@ -104,7 +104,8 @@ avatar: /img/author.jpg
 #avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png
 
 # the banner image of index
-top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
+#top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
+top_img: https://source.unsplash.com/collection/collectionid/1600x900
 # 以下鏈接是動態壁紙，每次刷新會更換
 # https://source.unsplash.com/collection/collectionid/1600x900
 # https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
@@ -208,9 +209,9 @@ disqus:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: SQRBzXUT1TEvasyltUXgHWsn-gzGzoHsz # leancloud application app id
+  appKey: EOzGyrBHy4fhVTvG1hFatTon # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
@@ -347,13 +348,13 @@ canvas_nest:
 
 # 打字效果
 activate_power_mode:
-  enable: false
+  enable: true
 
 # 鼠標點擊效果
 # 避免卡頓，建議只開啓一個
 # 點擊烟火特效
 fireworks:
-  enable: false
+  enable: true
 
 # 點擊出現愛心
 click_heart:
@@ -420,7 +421,7 @@ subtitle:
   # source: 3  調用一句网（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的内容
-  source: false
+  source: true
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
     - 今日事&#44;今日畢
@@ -623,4 +624,3 @@ CDN:
 
   translate: /js/tw_cn.js
   runtimeshow: js/runtimeshow.js
-

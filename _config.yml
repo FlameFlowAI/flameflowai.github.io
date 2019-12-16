@@ -29,6 +29,22 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+algolia:
+  appId: '7Q9NA1YK3W'
+  apiKey: '6239883f07c3f371cea6f1f4b6e493b1'
+  adminApiKey: 'b0f0ba38c811aa03f9a584809074ba84'
+  indexName: 'Blog'
+  chunkSize: 5000
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -93,3 +109,4 @@ feed:
     type: atom ##feed类型 atom或者rss2
     path: atom.xml ##feed路径
     limit: 8  ##feed文章最小数量
+ 
