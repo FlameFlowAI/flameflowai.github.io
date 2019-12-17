@@ -16,6 +16,11 @@ page:
   tag: 标签
   category: 分类
   archives: 归档
+  messageboard: 留言板
+  tags: 标签
+  categories: 分类
+  link: 友链
+  about: 关于
 
 sticky: 置顶
 no_title: 无题
@@ -102,3 +107,14 @@ Snackbar:
   cht_to_chs: 你已切换为简体
   day_to_night: 你已切换为深色模式
   night_to_day: 你已切换为浅色模式
+
+
+menu:
+  home: 首页
+  archives: 时间轴
+  categories: 分类
+  tags: 标签
+  messageboard: 留言板
+  link: 友链
+  about: 关于
+  list: 清单

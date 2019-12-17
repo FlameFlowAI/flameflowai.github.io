@@ -16,6 +16,7 @@ page:
   tag: 標籤
   category: 分類
   archives: 時間軸
+  messageboard: 留言板
 
 sticky: 置頂
 no_title: 無題
@@ -105,3 +106,12 @@ Snackbar:
   night_to_day: 你已切換為淺色模式
 
 
+menu:
+  home: 首頁
+  archives: 時間軸
+  categories: 分類
+  tags: 標籤
+  messageboard: 留言板
+  link: 友鏈
+  about: 關於
+  list: 清單

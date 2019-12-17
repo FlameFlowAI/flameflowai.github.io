@@ -30,6 +30,18 @@ block content
         include includes/comments/index.pug
     #aside_content.aside_content
       include includes/aside.pug
+
+  else if (page.type === 'about'   ||  page.type === 'messageboard')
+    article#page
+      if (page.title !== undefined)
+      h1=_p('page.' + page.title)
+      .article-container!= page.content
+      include includes/pagination.pug
+      if page.comments !== false
+        include includes/comments/index.pug
+    #aside_content.aside_content
+      include includes/aside.pug
+
   else
     article#page
       h1= page.title
