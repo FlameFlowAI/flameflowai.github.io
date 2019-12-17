@@ -12,7 +12,6 @@
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^0.1.0",
     "hexo-generator-category": "^0.1.0",
-    "hexo-generator-feed": "^1.0.1",
     "hexo-generator-index": "^0.1.0",
     "hexo-generator-tag": "^0.1.0",
     "hexo-i18n": "^1.0.0",
@@ -23,5 +22,9 @@
     "hexo-server": "^0.1.3",
     "hexo-tag-bootstrap": "0.0.8",
     "hexo-wordcount": "^6.0.1"
-  }
+  },
+  "scripts": {"test": "echo test",
+    "build:en": "rm -rf source/_posts/* && cp -r en/* source/_posts && hexo generate --config _config.yml && rm -rf source/_posts/*",
+    "build:cn": "rm -rf source/_posts/* && cp -r cn/* source/_posts && hexo generate --config _config.yml,_config.cn.yml && rm -rf source/_posts/*",
+    "build": "rm -rf public &&  npm run build:cn  && npm run build:en"}
 }

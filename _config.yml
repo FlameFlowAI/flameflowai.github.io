@@ -7,9 +7,7 @@ title: John White
 subtitle: Know Yourself. Ceaseless Selfimprovement.
 description: Share what I learn
 author: John White
-language:
- - zh-CN
- - en
+language: en
 timezone:
 
 # URL
@@ -105,8 +103,8 @@ tag_generator:
 category_generator: 
     per_page: 8 ###分类页面默认10篇文章
 
-feed:
-    type: atom ##feed类型 atom或者rss2
-    path: atom.xml ##feed路径
-    limit: 8  ##feed文章最小数量
+#feed:
+#    type: atom ##feed类型 atom或者rss2
+#    path: atom.xml ##feed路径
+#    limit: 8  ##feed文章最小数量
  

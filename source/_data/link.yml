@@ -1,5 +1,5 @@
 class:
-  class_name: 友情鏈接
+  class_name:  Links
   link_list:
     1:
       name: Mind hacks

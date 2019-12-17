@@ -19,8 +19,9 @@ page:
   messageboard: 留言板
   tags: 标签
   categories: 分类
-  link: 友链
+  link: 友情链接
   about: 关于
+
 
 sticky: 置顶
 no_title: 无题
@@ -118,3 +119,6 @@ menu:
   link: 友链
   about: 关于
   list: 清单
+  language: 简体中文
+
+

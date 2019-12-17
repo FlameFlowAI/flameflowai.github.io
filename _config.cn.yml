@@ -1,0 +1,12 @@
+# Hexo Configuration
+
+language: zh-CN
+
+public_dir: public/cn
+
+root: /cn
+
+url: https://johnwhite-leaf.github.io/cn
+
+
+ 

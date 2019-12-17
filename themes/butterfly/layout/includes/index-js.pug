@@ -23,10 +23,10 @@ if theme.subtitle.enable
         var both = sub.unshift(data['ciba-en'],data.ciba)
         var typed = new Typed(".subtitle", {
         strings: sub,
-        startDelay: 300,
+        startDelay: 500,
         typeSpeed: 100,
         loop: true,
-        backSpeed: 50
+        backSpeed: 20
         });
       })
       .catch(function (err) {
@@ -43,10 +43,10 @@ if theme.subtitle.enable
         var both = sub.unshift(data.hitokoto)  
         var typed = new Typed(".subtitle", {
         strings: sub,
-        startDelay: 300,
+        startDelay: 500,
         typeSpeed: 100,
         loop: true,
-        backSpeed: 50
+        backSpeed: 20
         });
       })
       .catch(function (err) {
@@ -61,10 +61,10 @@ if theme.subtitle.enable
       var both = sub.unshift(con,author)
       var typed = new Typed(".subtitle", {
       strings: sub,
-      startDelay: 300,
+      startDelay: 500,
       typeSpeed: 100,
       loop: true,
-      backSpeed: 50
+      backSpeed: 20
       });
   else if source == '4'
     script(type="text/javascript" src="https://sdk.jinrishici.com/v2/browser/jinrishici.js")
@@ -75,10 +75,10 @@ if theme.subtitle.enable
         var both = sub.unshift(content)
         var typed = new Typed(".subtitle", {
         strings: sub,
-        startDelay: 300,
+        startDelay: 500,
         typeSpeed: 100,
         loop: true,
-        backSpeed: 50
+        backSpeed: 20
       });
       })
      
@@ -86,10 +86,10 @@ if theme.subtitle.enable
     script.
       var typed = new Typed(".subtitle", {
       strings: '!{theme.subtitle.sub}'.split(","),
-      startDelay: 300,
+      startDelay: 500,
       typeSpeed: 100,
       loop: true,
-      backSpeed: 50
+      backSpeed: 20
       });
 
 if !theme.index_top_img_height && !theme.index_site_info_top

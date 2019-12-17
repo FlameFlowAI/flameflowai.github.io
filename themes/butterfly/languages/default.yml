@@ -20,6 +20,7 @@ page:
   categories: Category
   about: About
   messageboard: Messageboard
+  link: Link
 
 sticky: Sticky
 no_title: No title
@@ -116,3 +117,5 @@ menu:
   link: Link
   about: About
   list: List
+  language: English
+

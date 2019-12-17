@@ -12,9 +12,9 @@ menu:
   messageboard: /messageboard/ || fa fa-coffee
   link: /link/ || fa fa-link
   about: /about/ || fa fa-heart
-  list||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  language || fa fa-globe:
+    - English || /
+    - 简体中文 || /cn/
 
 # Favicon
 # ---------------
@@ -55,7 +55,7 @@ copy:
 social:
   fa fa-github: https://github.com/Johnwhite-leaf/
   fa fa-envelope: mailto:qq305013720@gmail.com
-  fa fa-rss: /atom.xml
+#fa fa-rss: /atom.xml
 
 ####    search    ####
 # Algolia search
@@ -422,11 +422,11 @@ subtitle:
   # source: 3  調用一句网（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的内容
-  source: true
+  source: 2
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - Know Yourself. Ceaseless Selfimprovement.
+    - 认识自我，自强不息
 
 
 ####    側邊欄    ####

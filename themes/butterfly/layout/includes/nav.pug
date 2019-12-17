@@ -8,9 +8,9 @@ if is_home()
     #site-info
       #site-title
           if (page.title !== undefined)
-            span.blogtitle= _p('page.'+ page.title)
+             span.blogtitle= _p('page.'+ page.title)
           else
-            span.blogtitle=  page.title || page.tag || page.category || config.title
+             span.blogtitle=  page.title || page.tag || page.category || config.title
       #site-sub-title
         span.subtitle
         
@@ -34,7 +34,4 @@ else
             if (page.title !== undefined)
               span.blogtitle= _p('page.'+ page.title)
             else
-              if (config.title !== undefined)
-                span.blogtitle= 'teset'
-              else
-                span.blogtitle=   page.title || page.tag || page.category || config.title
+              span.blogtitle=   page.title || page.tag || page.category || config.title
