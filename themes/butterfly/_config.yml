@@ -11,6 +11,7 @@ menu:
   categories: /categories/ || fa fa-folder-open
   messageboard: /messageboard/ || fa fa-coffee
   link: /link/ || fa fa-link
+  coolresume: /coolresume/ || fa fa-address-card
   about: /about/ || fa fa-heart
   language || fa fa-globe:
     - English || /

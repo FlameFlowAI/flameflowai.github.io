@@ -16,11 +16,7 @@ page:
   tag: Tag
   category: Category
   archives: Archives
-  tags: Tag
-  categories: Category
-  about: About
   messageboard: Messageboard
-  link: Link
 
 sticky: Sticky
 no_title: No title
@@ -75,10 +71,8 @@ aside:
 
 donate: Donate
 share: Share
-
 bookmark:
   title: Bookmark
-
 
 rightside:
   readmode_title: Read Mode
@@ -114,8 +108,12 @@ menu:
   categories: Categories
   tags: Tags
   messageboard: Messageboard
+  record: Record
+  cassette: Cassette
+  video: Video
+  fruit: Cut fruit
   link: Link
+  coolresume: Cool Resume
   about: About
   list: List
   language: English
-

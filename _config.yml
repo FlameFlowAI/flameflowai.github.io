@@ -50,7 +50,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -107,4 +107,19 @@ category_generator:
 #    type: atom ##feed类型 atom或者rss2
 #    path: atom.xml ##feed路径
 #    limit: 8  ##feed文章最小数量
- 
+
+aplayer:
+    cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js  # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+    style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+    meting: true       # MetingJS 支持
+    meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+
+
+hexo-tag-dplayer:
+    cdn:
+       - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js
+       - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css
+    default:
+       api: https://api.prprpr.me/dplayer/
+       loop: yes
+       screenshot: yes

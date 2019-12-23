@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "dependencies": {
+    "editor.md": "^1.5.0",
     "hexo": "^3.0.0",
     "hexo-algolia": "^1.3.1",
     "hexo-algoliasearch": "^0.4.1",
@@ -20,11 +21,15 @@
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^0.1.3",
+    "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-bootstrap": "0.0.8",
+    "hexo-tag-dplayer": "^0.3.3",
     "hexo-wordcount": "^6.0.1"
   },
-  "scripts": {"test": "echo test",
-    "build:en": "rm -rf source/_posts/* && cp -r en/* source/_posts && hexo generate --config _config.yml && rm -rf source/_posts/*",
-    "build:cn": "rm -rf source/_posts/* && cp -r cn/* source/_posts && hexo generate --config _config.yml,_config.cn.yml && rm -rf source/_posts/*",
-    "build": "rm -rf public &&  npm run build:cn  && npm run build:en"}
+  "scripts": {
+    "test": "echo test",
+    "build:en": "rm -rf source/_posts/* && cp -r en/* source/_posts && hexo generate --config _config.yml && rm -rf source/_posts/* &&  cp -r html5app/* public",
+    "build:cn": "rm -rf source/_posts/* && cp -r cn/* source/_posts && hexo generate --config _config.yml,_config.cn.yml && rm -rf source/_posts/* &&  cp -r html5app/* public/cn",
+    "build": "rm -rf public &&  npm run build:cn  && npm run build:en"
+  }
 }

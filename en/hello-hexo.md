@@ -42,3 +42,13 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+
+{% meting "2250011882" "netease" "playlist"  "autoplay" "mutex:true"
+    "listmaxheight:340px"    "preload:auto"  "theme:#ad7a86" %}
+
+
+{% meting "002j785c33YQHT" "tencent" "song" "autoplay" "mutex:true"
+    "listmaxheight:340px"    "preload:auto"  "theme:#ad7a86" %}
+
+{% aplayer "My Love Is A Weapon" "Skrux Delacey " "My_Love_Is_A_Weapon.mp3"  %}
