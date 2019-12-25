@@ -5,3 +5,6 @@ type: "about"
 Hello, I'm John White.
 
 This is my blog, believe it or not.
+
+
+{% aplayer "My Love Is A Weapon" "Skrux Delacey " "My_Love_Is_A_Weapon.mp3"  %}

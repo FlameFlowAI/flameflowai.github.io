@@ -3,7 +3,7 @@
 # format: xxx: 連結 || icon
 # sub-menu
 # xxx || icon:
-#   xxx || 連結 || icon
+#   xxx || 連結 || icon || mobileHide
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
@@ -11,7 +11,7 @@ menu:
   categories: /categories/ || fa fa-folder-open
   messageboard: /messageboard/ || fa fa-coffee
   link: /link/ || fa fa-link
-  coolresume: /coolresume/ || fa fa-address-card
+  coolresume: /coolresume/ || fa fa-address-card || true
   about: /about/ || fa fa-heart
   language || fa fa-globe:
     - English || /

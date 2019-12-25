@@ -1,14 +1,25 @@
 each value, label in theme.menu
   if !Array.isArray(value)
-    .menus_item
-      if(page.lang === 'zh-CN')
-         a.site-page(href='/cn'+trim(value.split('||')[0]))
-            i.fa-fw(class=trim(value.split('||')[1]))
-            span=' '+_p('menu.'+label)
-      else
-         a.site-page(href=trim(value.split('||')[0]))
-             i.fa-fw(class=trim(value.split('||')[1]))
-             span=' '+_p('menu.'+label)
+    if(value.split('||').length>2)
+        .menus_item(mobile-hidden=''+trim(value.split('||')[2]))
+          if(page.lang === 'zh-CN')
+              a.site-page(href='/cn'+trim(value.split('||')[0]))
+                  i.fa-fw(class=trim(value.split('||')[1]))
+                  span=' '+_p('menu.'+label)
+          else
+              a.site-page(href=trim(value.split('||')[0]))
+                  i.fa-fw(class=trim(value.split('||')[1]))
+                  span=' '+_p('menu.'+label)
+    else
+       .menus_item
+          if(page.lang === 'zh-CN')
+            a.site-page(href='/cn'+trim(value.split('||')[0]))
+                i.fa-fw(class=trim(value.split('||')[1]))
+                span=' '+_p('menu.'+label)
+          else
+            a.site-page(href=trim(value.split('||')[0]))
+                i.fa-fw(class=trim(value.split('||')[1]))
+                span=' '+_p('menu.'+label)
   else
     .menus_item
       a.site-page

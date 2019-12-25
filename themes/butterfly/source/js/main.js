@@ -380,6 +380,19 @@ $(function () {
       }
     }
 
+    if (isMobile()){
+      console.log("isMobile true");
+      $("#mobile-sidebar-menus .menus_items .menus_item").each(function (index) {
+        if($(this).attr("mobile-hidden") == "true"){
+            console.log("mobile-hidden true");
+            $(this).hide();
+            //$(this).css("display","none");
+            //$(this).attr("style","display:none;");
+        }
+      })
+    }else {
+      console.log("isMobile false");
+   }
   })
 
   $('#mobile-toc-button').on('click', function () {
