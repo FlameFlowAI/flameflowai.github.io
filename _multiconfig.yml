@@ -1,0 +1,81 @@
+title: John White
+subtitle: Know Yourself. Ceaseless Selfimprovement.
+description: Share what I learn
+author: John White
+language: zh-CN
+timezone: null
+url: 'https://johnwhite-leaf.github.io/cn'
+root: /cn
+permalink: ':year/:month/:day/:title/'
+permalink_defaults: null
+source_dir: source
+public_dir: public/cn
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: ':lang'
+skip_render: null
+algolia:
+  appId: 7Q9NA1YK3W
+  apiKey: 6239883f07c3f371cea6f1f4b6e493b1
+  adminApiKey: b0f0ba38c811aa03f9a584809074ba84
+  indexName: Blog
+  chunkSize: 5000
+  fields:
+    - 'content:strip:truncate,0,500'
+    - 'excerpt:strip'
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+new_post_name: ':title.md'
+default_layout: post
+titlecase: false
+external_link: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  tab_replace: null
+default_category: uncategorized
+category_map: null
+tag_map: null
+date_format: YYYY-MM-DD
+time_format: 'HH:mm:ss'
+per_page: 8
+pagination_dir: page
+theme: butterfly
+deploy:
+  type: git
+  repository: 'https://github.com/Johnwhite-leaf/Johnwhite-leaf.github.io.git'
+  branch: master
+index_generator:
+  per_page: 8
+archive_generator:
+  per_page: 8
+  yearly: true
+  monthly: true
+tag_generator:
+  per_page: 8
+category_generator:
+  per_page: 8
+aplayer:
+  cdn: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js'
+  style_cdn: 'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css'
+  meting: true
+  meting_cdn: 'https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js'
+hexo-tag-dplayer:
+  cdn:
+    - 'https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js'
+    - 'https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css'
+  default:
+    api: 'https://api.prprpr.me/dplayer/'
+    loop: 'yes'
+    screenshot: 'yes'
