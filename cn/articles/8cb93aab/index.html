@@ -1,0 +1,102 @@
+<script type="text/javascript" charset="utf-8" src="/cn/live2d-widget/autoload.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>写点什么 | Know Yourself</title><meta name="description" content="写点什么"><meta name="keywords" content="写"><meta name="author" content="John White"><meta name="copyright" content="John White"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/cn/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="写点什么"><meta name="twitter:description" content="写点什么"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/mr-write-logo.png"><meta property="og:type" content="article"><meta property="og:title" content="写点什么"><meta property="og:url" content="https://johnwhite-leaf.github.io/cn/articles/8cb93aab/"><meta property="og:site_name" content="Know Yourself"><meta property="og:description" content="写点什么"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/mr-write-logo.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/cn/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://johnwhite-leaf.github.io/cn/articles/8cb93aab/"><link rel="prev" title="基于OpenGrok搭建Android代码搜索服务器笔记" href="https://johnwhite-leaf.github.io/cn/articles/23087cff/"><link rel="next" title="我的拖延症治疗方法" href="https://johnwhite-leaf.github.io/cn/articles/33ba3d6b/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/cn/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-center"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/cn/">Know Yourself</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/cn/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/cn/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/cn/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cn/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/cn/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/cn/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/cn/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/cn/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> 酷简历</span></a></div><div class="menus_item"><a class="site-page" href="/cn/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> 简体中文</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/cn/img/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/cn/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/cn/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/cn/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/cn/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/cn/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/cn/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cn/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/cn/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/cn/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/cn/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/cn/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> 酷简历</span></a></div><div class="menus_item"><a class="site-page" href="/cn/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> 简体中文</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/mr-write-logo.png)"><div id="post-info"><div id="post-title"><div class="posttitle">写点什么</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2016-10-08<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-03-17</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/cn/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">1.3k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 3 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>写点什么，写点什么，写点什么……一个声音在我耳朵里不断回响，特别在夜深人静独处的时候，这个声音尤为清晰响亮。 白天那个在别人面前侃侃而谈的我，是难以听清这个声音的，可能在别人眼里，我是性格外向的人，但只有我自己才知道，在夜深人静的夜里，那个喜欢独处，性格内向爱幻想的我，才真正是我想要活在这个世界上的方式。内向又爱幻想的我，脑子里总有各种各样的想法，却又无从倾述 ，不知向谁倾述。所以我渴望把自己的想法感悟写下来，但我又从没有认认真真写过什么，因为害怕自己写的不好，不敢把自己写的任何文字给别人看，怕别人取笑。因为害怕，我选择了逃避，不敢去写。</p>
+<p>逃避并没有让我好过些，相反令我更痛苦，因为我喜欢写字，喜欢笔在纸上滑动的沙沙声，喜欢在白纸上写满字，但很多时候我却不敢写，且不善于写。矛盾的心理正是我的痛苦之源，写还是不写，该如何选择？现在摆在我面前有两条路，要么继续害怕逃避，继续活在痛苦纠结中，要么现在就着手改变，现在就开始写。假如我选择前者，我不清楚什么时候才会有勇气开始写，也许直到某一天自己厌倦了这个“写点什么”的声音， 也许直到有一天我的耳朵再也听不到这个“写点什么”的声音， 也许直到有一天再也没有提笔的勇气或力气，也许直到死去，也不会写出点什么。永远写不出什么，这更令我害怕恐惧。我唯一能把握的就是今天的此时此刻，立刻开始写点什么，不管明天会发生什么，至少在今天，我跟随我心写了点什么。</p>
+<p>写点什么吧！ 我认为不管写什么，写终归是对自己有益的。我手写我心，写我所思所想，而现在我最想做的事就是“写点什么”，那就以“写点什么”为题吧。</p>
+<p>过去我很困惑，多少次提起笔来，头脑一片空白，不知道写什么好，万事开头难，写更是如此。现在我的办法是，写下第一个字，第一个词，第一句话，有了第一句话，然后对第一句话又有何感想呢？由第一句话写出第二话，由第二句话又写出第三句话，以此类推，这恰似道家的一生二，二生三，三生万物的道理。这是一种意识流写作方法，想到什么写什么，随心所欲，自由自在地写。</p>
+<p>写着写着发现自己实在写不下去了，这次我又想起了5W1H分析法，又叫6何法，围绕写作主题从原因（何因Why）、对象（何事What）、地点（何地Where）、时间（何时When）、人员（何人Who）、方法（何法How）等六个方面提出问题进行思考 ，写出自己心中的答案，而对于每一个问题的答案可以用 5W1H分析再次展开写，这样算下来起码有6＊6得36个话题点可写了。当然这些话题点中，有些值得写，有些不需要写，有些要详细写，有些一笔带过。</p>
+<p>写了点什么后，要不要发表出去呢？站在笔者的角度，发表后如果能获得反馈，起到抛砖引玉的效果就再好不过了。站在读者角度，有价值的文章才值得读，所以写出对读者有价值的文字才发表 。因为读者花了宝贵的时间读你的文字，所以要对读者负责任，而且自己便是第一个读者，发表前要过自己这一关，回答以下这个问题，这篇文章对读者的价值在哪里呢？我的答案是，鼓励那些和我一样想写又不敢写内心矛盾的读者，勇敢追随内心去写点什么，并马上行动起来，用意识流方法开头开始写，用5W1H分析法展开写，写出第一篇文章，向心中的梦想勇敢迈出第一步。</p>
+<p>想写点什么就写吧，现在就写，从无到有，从少到多，从烂到好。写这篇文章，也是我的第一次勇敢尝试，跌跌撞撞写完了这篇文字，挺辛苦的，但我乐在其中。实践出真知，再好得方法不去实践都等于零，实践中遇到问题和困难，解决问题和克服困难找到适合自己的写作方法和节奏。至此我也明白了，<strong><strong>有梦想并敢于追随自己心声的人，可以把渴望，害怕，恐惧，痛苦，纠结，困惑，乐趣，嘲笑，鼓励，快乐等等，都转化为追梦的力量，并用行动来说明一切！</strong></strong></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">John White</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://johnwhite-leaf.github.io/cn/articles/8cb93aab/">https://johnwhite-leaf.github.io/cn/articles/8cb93aab/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://johnwhite-leaf.github.io/cn">Know Yourself</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/cn/tags/%E5%86%99/">写    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/mr-write-logo.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/cn/img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/cn/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/cn/articles/23087cff/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/opengrok-logo.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>基于OpenGrok搭建Android代码搜索服务器笔记</span></div></a></div><div class="next-post pull_right"><a href="/cn/articles/33ba3d6b/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/clock-logo.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>我的拖延症治疗方法</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/cn/articles/6b92125f/" title="为什么写博客？"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/blog-logo.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2015-06-07</div><div class="relatedPosts_title">为什么写博客？</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'SQRBzXUT1TEvasyltUXgHWsn-gzGzoHsz',
+  appKey:'EOzGyrBHy4fhVTvG1hFatTon',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By John White</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/cn/js/utils.js"></script><script src="/cn/js/main.js"></script><script src="/cn/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>

@@ -1,0 +1,119 @@
+<script type="text/javascript" charset="utf-8" src="/cn/live2d-widget/autoload.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>我的拖延症治疗方法 | Know Yourself</title><meta name="description" content="我的拖延症治疗方法"><meta name="keywords" content="拖延症"><meta name="author" content="John White"><meta name="copyright" content="John White"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/cn/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="我的拖延症治疗方法"><meta name="twitter:description" content="我的拖延症治疗方法"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/clock-logo.jpg"><meta property="og:type" content="article"><meta property="og:title" content="我的拖延症治疗方法"><meta property="og:url" content="https://johnwhite-leaf.github.io/cn/articles/33ba3d6b/"><meta property="og:site_name" content="Know Yourself"><meta property="og:description" content="我的拖延症治疗方法"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/clock-logo.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/cn/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://johnwhite-leaf.github.io/cn/articles/33ba3d6b/"><link rel="prev" title="写点什么" href="https://johnwhite-leaf.github.io/cn/articles/8cb93aab/"><link rel="next" title="怎么搭建自己的博客？" href="https://johnwhite-leaf.github.io/cn/articles/e09813de/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/cn/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-center"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/cn/">Know Yourself</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/cn/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/cn/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/cn/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cn/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/cn/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/cn/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/cn/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/cn/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> 酷简历</span></a></div><div class="menus_item"><a class="site-page" href="/cn/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> 简体中文</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/cn/img/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/cn/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/cn/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/cn/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/cn/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/cn/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/cn/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/cn/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/cn/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/cn/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/cn/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/cn/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> 酷简历</span></a></div><div class="menus_item"><a class="site-page" href="/cn/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> 简体中文</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/clock-logo.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">我的拖延症治疗方法</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2015-08-11<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-03-17</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/cn/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">3.8k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 10 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>距离上一篇文章发表将近两个月了，整整两个月没有发表一篇博文，期间也有一次想认真去写一篇，但结果还是没有写！今天听完一篇主题为拖延症的“逻辑思维”，才意识到自己已经是拖延症晚期患者了，虽然我也认同拖延症其实不是病，而是人类进化的结果，但拖延症确实对我有不好的影响，让我干不成自己想干的事，那我就必须得治疗自己的拖延症。</p>
+<p>百度了下“拖延症”，发现如下一篇文章<a href="http://www.xinli001.com/info/1347/" target="_blank" rel="noopener">10个治愈拖延症珍藏版心理技巧</a>，看着文章回想起自己的一些经历，我认为这篇文章写得很有道理！比如第1种比较法我在工作中经常应用，把自己今天要做的工作全部写到记事本上，标出序号，然后从最容易完成的那件工作开始做，每做完一件都在任务列表里对应任务后面打一个勾表示完成，当越来越多的任务被打上勾，就能激发干劲去完成那些相对难的任务。其实我认为第10种方法分解任务也和第1种方法利用了相同的原理，只是对象和时间长度不同，第1种方法针对短期小任务可直接应用比较法，第10种方法适用于长期大任务，大任务就得先分解成小任务才能应用比较法呀。</p>
+<p>关于第3种方法禁止多任务操作，以前我也有过不少把几件事一起做最后反而都做不好的经历。话说大脑是多任务操作系统，但如果不是多核CPU，本质上还是只能执行单个任务，不停地切换任务来实现多任务，其实这是伪多任务，而任务间切换是有额外开销的，我更倾向于大脑是单核CPU，你可以尝试下左右画圆右手画方有多难，就知道为什么我说大脑是单核CPU，记得电影三大傻大闹宝莱坞（Three idiots）中的教导主任“病毒”能够左右手同时写字，但我认为那只是经过长期训练减少了任务切换的开销。既然大脑是单核CPU，那么要提高效率就得专注，通过训练提高自己的CPU频率。</p>
+<p>我也有消极完美主义的心理，在百度百科上了解到这个“消极完美主义”，消极完美主义的突出特点不是“追求完美”，而是害怕不完美。这种害怕自己做的不完美的心理让自己不敢动手去做——拖延，逐渐怀疑自己的实力而失去了自信（第5种方法），最后一事无成。其实完美在现实中是不存在的，不必去苛求，不完美才是真实的，而真实就是一种美，有美就可以了。</p>
+<p>我也是一个容易被干扰容易分心的人，所以对于第2种方法切断干扰源和第9种设定专注时间，我一直都很渴望能这样做。我梦想着能有一间自己的书房，自己在书房里能不被任何人打搅……你看消极完美主义心理又来捣乱了。其实能做到把有可能干扰自己的东西尽量排除就可以了，然后聚精会神保持状态10到20分钟，逐渐训练延长专注时间。</p>
+<p>其实写这篇博文刚开始我也是想转载方便自己以后看而已，转载是很容易就能完成的，然后当我做完转载所需的工作后，不妨结合自己的经历写点自己的想法吧，然后就有了上面这些文字。如果我一开始就想着写一篇关于自己的拖延症治疗方法这篇文章，恐怕给我拖延了……</p>
+<p>最后我总结针对自己的拖延症疗法：<strong>分解任务列成表，择其一易者先为之，不求完美，专心致志</strong></p>
+<p><a href="http://www.xinli001.com/info/1347/" target="_blank" rel="noopener">10个治愈拖延症珍藏版心理技巧</a></p>
+<blockquote>
+<p>在一个理想的世界里，我们可以准时的按照计划去做事情，我们能够把已经制定好的计划，完美的执行下来。但是，在现实世界中，这一切都变得很难。纸上谈兵确实很容易，谁都可以做出一个很好的计划，但是，真正要我们去做了，各种各样的理由从我们脑中产生，周围的诱惑干扰也被无形的放大，我们开始畏惧，不敢去做，种种借口让我们把本该昨天就完成的任务拖延到了今天，此刻的我们还在忙着寻找和编织着下一个借口。</p>
+<p>难道说拖延真的不能被战胜么？我们为何要输给自己呢？拖延的产生，从本质上来说就是我们不喜欢做不感兴趣的事情，所以想要延迟痛苦；另一方面，我们做的事情可能需要很长时间才能看到成果，导致我们迟迟不愿开始。与拖延的战斗，其实就是与自身懒惰的习性相抗衡，我们要养成立即行动的习惯，才能克服拖延的困扰，让好习惯代替坏习惯。</p>
+<ol>
+<li>比较法——让自己从心理上接受。<br>当我深入思考了为什么会产生拖延的问题之后，我认识到拖延其实就是一种自我欺骗。我们人性生来懒惰，这我不得不承认，如果有一个舒服温暖的被窝，我是不会愿意起身去寒冷的户外。从远古以来，我们人类就进化了一个自我保护的功能，即远离有害的，趋向有利的。这样可以使我们能够更好地存活在恶劣的环境中，这是我们大脑的一个固有机制。那么，拖延的产生本质也与这个有关，我们更希望去做简单的快乐的事情，而不是令我们痛苦的工作。<br>那么，我就利用这个特点，发明了比较法，其实就是欺骗自己的大脑，因为我们的大脑不会进行比较，很容易被欺骗。例如，某人可能为了买一个在A商店30元的钢笔而打车去B商店买同样的售价20元的钢笔，结果坐车花了15元。<br>这种方法就是，在你的任务列表里再挑一个比你此时你不想做的任务A更容易的任务B，然后告诉自己，A和B此时必须完成一个，你可以自己挑选。那么，作为大脑，肯定觉得B比较容易，所以就去做B吧。事实上，可能还有任务C、D、E比B更容易做。这样，我们就成功的欺骗了自己，让自己在心理上感到不再畏惧，就能立即去行动。那么，我们可以找一个比A更难的任务S，这样，我们也就有理由去做A了。这是一个自欺欺人的方法，不过很有效果。</li>
+<li>切断干扰源——让自己更加专注。<br>在我们的生活中有很多干扰源，例如手机、电脑、网络等，当我们想要专心做一件事情的时候，尤其是在做一件很想拖延到明天的事情时，一个他人的短信也许就可以让我们转移注意力，去干其他事情，甚至很难再回到最初的状态。我们要做的就是简化周围所有的干扰源，把所有认为可能会打断我们专注状态的东西全部通通切断。我自己在写文章的时候，就会断开网络连接，把手机调到静音，找一个独处的环境开始写作，直到写完。这种保持专注的状态很重要，本来磨磨蹭蹭要2个小时做完的事情，我可能不到一个小时就搞定了。那么节省的时间我可以用来彻底的放松。这样即完成了任务，又可以好好的休息。</li>
+<li>禁止多任务操作——变得简单高效。<br>虽然说我们的大脑是多任务操作系统，我们可以一边唱歌一边洗澡，一边听音乐一边做饭。但有的时候，单线程工作可以让我们保持高度的注意力，让我们更快的完成任务，从而减少拖延的次数，培养立即完成的好习惯。</li>
+<li>不要追求完美——给自己一个低的起点。<br>有的时候由于我们追求完美的心理在作怪，导致我们还没有开始做一件事情就已经在为各种可能出现的问题而焦虑，最后结果是我们迟迟不敢开始着手去做，使得任务拖延。事实上，我们可以给自己定一个很低的起点，例如我要达到一口气做200个俯卧撑，那么我可以第一天只做10个，第二天增加到15个。这样，起点很低，我就更愿意相信自己能够做完并且不会痛苦，我也就敢于开始，而不是只停留在幻想的阶段。我们所拖延的大多数任务，都是因为我们把它想得太难了，太痛苦了，当我们把起点放低，我们会立即去做。</li>
+<li>坚信自己的实力——永远不要失去自信。<br>最让我痛恨一种人就是整日告诉他人“你不行，你不可能做到，你的想法很愚蠢。”这种人不知道抹杀了多少怀有梦想的人，将他人的彩色的世界变得灰暗无助。如果你相信自己，就要忽视那些弱者的话，他们说你不行是因为他们自己也没有做到。<br>其实，我们每个人的心中都有这种人的存在，当我们面对困难时，会有一种声音告诉我们“你不行，你不可能做到，这件事很难很痛苦。”如果是一个真实的人，我们也许会愤怒的告诉他“我能做到！”，但是，如果换做自己呢？我们又有多少勇气战胜自己内心的怯懦呢？正是有了这些弱者的声音，使得我们动摇了坚定的信念，多少可以改变世界的想法拖延至今。我想，解决方法只有一个——那就是现在开始去做，一旦你开始了，就无所畏惧。</li>
+<li>等待他人是可笑的——真正靠得住的人只有自己。<br>有的时候能够完成任务的真正途径只有一个，那就是自己去做。我们永远不要有托付给别人的想法，因为这是非常不可靠的，即使这个人准确的像时钟一样，它也有电池用完停下来的一天。我们有的时候指望别人能够做某件事情，还不如自己去做，虽然痛苦点，但是我们可以掌握工作的进度，而不是想法设法督促他人。</li>
+<li>创建拖延任务列表——即使拖延我们也要拖得很帅。<br>好吧，如果我们确实战胜不了拖延的毛病，那么，我们为什么不利用这个坏习惯为我们服务呢？博华就给自己建立了一个拖延任务列表，在这个列表里，我罗列了很多我平常没有时间去做的事情——比如学习园艺、看一本有意思的书等等。这些列表里面的东西都很有意义而且令人不反感的小事。每当我实在不想继续做一件事情时，我会打开拖延列表挑一件事情去做。这样，既满足了我想要拖延的心理，又可以做平时没时间做的事情。有的时候，我们战胜不了拖延，那么为什么不换个角度，去享受它呢？</li>
+<li>拖延只是个想法——永远不要开始去实施。<br>你的头脑会暗示正在减肥的你去吃那块蛋糕，或者暗示正在戒烟的你去接过别人递来的香烟，或是暗示你将本该开始的任务拖延到明天。好吧，你真的有那么听话么？我们必须明确，当一个人有杀人动机的时候，并不代表他已经杀了那个人。同样的，当拖延的想法开始在脑海中盘旋的时候，我们要做的就是静静观望，而不是接受自己头脑的指示。佛家有个观点叫做观照，当我们内心滋生邪念的时候，需要静静坐在那里，然后以第三人称的视角观照自己的内心世界。一些不好的想法，就让它们慢慢消失，不要评判，不要妄动。当我们想要拖延时，告诉自己这只是个想法，我不会去做，因为一旦做了想法变成了现实就无法更改。</li>
+<li>设定专注时间——让自己更加高效。<br>当我不想做某一件事情的时候，我通常给自己设定一个计时器，例如20分钟，我告诉自己在这20分钟内必须专注于眼前的任务，没有任何借口推脱，直到闹铃响起。当20分钟过后，我会休息5分钟，然后设定下一个20分钟。当给自己定下倒计时后，心理上我们会有急迫感，这样会促使我们更加集中注意力完成任务。当出现干扰的时候，我会看一下倒计时，暗示自己再坚持3分钟就结束了。这种方法很有效，时间管理上就是将大的时间切分成小块时间，更易于我们去操作，是一种化整为零的思想。</li>
+<li>分解任务——开始行动的秘诀<br>再大的任务也可以分解成很多小的子任务，将每个子任务分配到自己的可用时间里面，当所有的子任务被完成，那么一个看似不可能的艰巨任务也搞定了。分解任务的精髓就是简化，将你想要拖延的任务分解开来，使它变成10个非常简单的子任务，你只需要先完成1个子任务，然后告诉自己，这个任务已经做完了十分之一，我可以先休息一下，然后再开始下一个子任务。这样，我们就能很快的行动起来，而不是内心充满畏惧造成拖延。</li>
+</ol>
+</blockquote>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">John White</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://johnwhite-leaf.github.io/cn/articles/33ba3d6b/">https://johnwhite-leaf.github.io/cn/articles/33ba3d6b/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://johnwhite-leaf.github.io/cn">Know Yourself</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/cn/tags/%E6%8B%96%E5%BB%B6%E7%97%87/">拖延症    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/clock-logo.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/cn/img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/cn/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/cn/articles/8cb93aab/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/mr-write-logo.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>写点什么</span></div></a></div><div class="next-post pull_right"><a href="/cn/articles/e09813de/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/hexo-logo.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>怎么搭建自己的博客？</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'SQRBzXUT1TEvasyltUXgHWsn-gzGzoHsz',
+  appKey:'EOzGyrBHy4fhVTvG1hFatTon',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By John White</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/cn/js/utils.js"></script><script src="/cn/js/main.js"></script><script src="/cn/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>

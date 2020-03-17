@@ -1,0 +1,188 @@
+<script type="text/javascript" charset="utf-8" src="/live2d-widget/autoload.js"></script><!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>How to write resume? | Know Yourself</title><meta name="description" content="How to write resume?"><meta name="keywords" content="resume"><meta name="author" content="John White"><meta name="copyright" content="John White"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="How to write resume?"><meta name="twitter:description" content="How to write resume?"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/resume-logo.png"><meta property="og:type" content="article"><meta property="og:title" content="How to write resume?"><meta property="og:url" content="https://johnwhite-leaf.github.io/articles/42747d96/"><meta property="og:site_name" content="Know Yourself"><meta property="og:description" content="How to write resume?"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/resume-logo.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://johnwhite-leaf.github.io/articles/42747d96/"><link rel="prev" title="Things I Love" href="https://johnwhite-leaf.github.io/articles/e6ac8af0/"><link rel="next" title="Building Android code search server based on opengrok" href="https://johnwhite-leaf.github.io/articles/ebce7f08/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Light Mode Activated Manually","night_to_day":"Dark Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-center"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Know Yourself</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> Messageboard</span></a></div><div class="menus_item"><a class="site-page" href="/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> Galleries</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> Cool Resume</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> English</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> Messageboard</span></a></div><div class="menus_item"><a class="site-page" href="/galleries/"><i class="fa-fw fa fa-picture-o"></i><span> Galleries</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item" mobile-hidden="true"><a class="site-page" href="/coolresume/"><i class="fa-fw fa fa-address-card"></i><span> Cool Resume</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-globe" aria-hidden="true"></i><span> English</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/"><span> English</span></a></li><li><a class="site-page" href="/cn/"><span> 简体中文</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#Programmer-resume-should-be-written-like-this"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">Programmer resume should be written like this</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Why-is-a-resume-important"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">Why is a resume important?</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#Let’s-start-before-the-interview"><span class="toc_mobile_items-number">1.1.1.</span> <span class="toc_mobile_items-text">Let’s start before the interview</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#From-the-interview"><span class="toc_mobile_items-number">1.1.2.</span> <span class="toc_mobile_items-text">From the interview</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#You-must-know-the-following-points"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">You must know the following points</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Two-rules-you-must-understand"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">Two rules you must understand</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#STAR-LAW-Situation-Task-Action-Result"><span class="toc_mobile_items-number">1.3.1.</span> <span class="toc_mobile_items-text">STAR LAW (Situation Task Action Result)</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#FAB-Rule-Feature-Advantage-Benefit"><span class="toc_mobile_items-number">1.3.2.</span> <span class="toc_mobile_items-text">FAB Rule (Feature Advantage Benefit)</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#How-to-write-project-experience"><span class="toc_mobile_items-number">1.4.</span> <span class="toc_mobile_items-text">How to write project experience?</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#How-to-write-professional-skills"><span class="toc_mobile_items-number">1.5.</span> <span class="toc_mobile_items-text">How to write professional skills?</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#typographical-considerations"><span class="toc_mobile_items-number">1.6.</span> <span class="toc_mobile_items-text">typographical considerations</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Other-small-tips"><span class="toc_mobile_items-number">1.7.</span> <span class="toc_mobile_items-text">Other small tips</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Recommended-tools-sites"><span class="toc_mobile_items-number">1.8.</span> <span class="toc_mobile_items-text">Recommended tools &#x2F; sites</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Programmer-resume-should-be-written-like-this"><span class="toc-number">1.</span> <span class="toc-text">Programmer resume should be written like this</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Why-is-a-resume-important"><span class="toc-number">1.1.</span> <span class="toc-text">Why is a resume important?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Let’s-start-before-the-interview"><span class="toc-number">1.1.1.</span> <span class="toc-text">Let’s start before the interview</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#From-the-interview"><span class="toc-number">1.1.2.</span> <span class="toc-text">From the interview</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#You-must-know-the-following-points"><span class="toc-number">1.2.</span> <span class="toc-text">You must know the following points</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Two-rules-you-must-understand"><span class="toc-number">1.3.</span> <span class="toc-text">Two rules you must understand</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#STAR-LAW-Situation-Task-Action-Result"><span class="toc-number">1.3.1.</span> <span class="toc-text">STAR LAW (Situation Task Action Result)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FAB-Rule-Feature-Advantage-Benefit"><span class="toc-number">1.3.2.</span> <span class="toc-text">FAB Rule (Feature Advantage Benefit)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-write-project-experience"><span class="toc-number">1.4.</span> <span class="toc-text">How to write project experience?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-write-professional-skills"><span class="toc-number">1.5.</span> <span class="toc-text">How to write professional skills?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#typographical-considerations"><span class="toc-number">1.6.</span> <span class="toc-text">typographical considerations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-small-tips"><span class="toc-number">1.7.</span> <span class="toc-text">Other small tips</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Recommended-tools-sites"><span class="toc-number">1.8.</span> <span class="toc-text">Recommended tools &#x2F; sites</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/resume-logo.png)"><div id="post-info"><div id="post-title"><div class="posttitle">How to write resume?</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Created 2019-12-23<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> Updated 2020-03-17</time><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>Word count:</span><span class="word-count">1.5k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>Reading time: 9 min</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>Post View:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><ul>
+<li>[Programmer resume should be written like this](# programmer resume should be written like this)<ul>
+<li>[Why is a resume important? ](# Why resume is important)<ul>
+<li>[Before interviewing](#Before interviewing)</li>
+<li>[Speaking from interview](#Speaking from interview)</li>
+</ul>
+</li>
+<li>[The following points you must know](#The following points you must know)</li>
+<li>[Two Laws You Must Know](#Two Laws You Must Know)<ul>
+<li>[STAR Law (Situation Task Action Result)](#star 法 situation-task-action-result)</li>
+<li>[FAB Rule (Feature Advantage Benefit)](# fab- 法 法 feature-advantage-benefit)</li>
+</ul>
+</li>
+<li>[How to write the project experience? ](# How to write the project experience)</li>
+<li>[How to write professional skills? ](# How to write professional skills)</li>
+<li>[Typographical Precautions](# Typographical Precautions)</li>
+<li>[Other small tips](# Other small tips)</li>
+<li>[Recommended Tools / Site](#Recommended Tools Website)</li>
+</ul>
+</li>
+</ul>
+<p>&lt;!-/ TOC-&gt;</p>
+<h1 id="Programmer-resume-should-be-written-like-this"><a href="#Programmer-resume-should-be-written-like-this" class="headerlink" title="Programmer resume should be written like this"></a>Programmer resume should be written like this</h1><p>In addition to teaching you how to use Markdown to write a programmer-specific resume, this article will also recommend some good software or websites for writing Markdown resumes, and how to elegantly convert Markdown to PDF or other format.</p>
+<p>It is recommended that you use Markdown syntax to write your resume, and then convert the Markdown format to PDF format for resume delivery.</p>
+<p>If you don’t know much about Markdown syntax, you can take a brief look at Markdown syntax description for half an hour: <a href="http://www.markdown.cn" target="_blank" rel="noopener">http://www.markdown.cn</a>.</p>
+<h2 id="Why-is-a-resume-important"><a href="#Why-is-a-resume-important" class="headerlink" title="Why is a resume important?"></a>Why is a resume important?</h2><p>A good resume can play a very good role in the entire application interview and the interview process. Without exaggerating your abilities, writing a good resume is also a great ability. Why is a resume important?</p>
+<h3 id="Let’s-start-before-the-interview"><a href="#Let’s-start-before-the-interview" class="headerlink" title="Let’s start before the interview"></a>Let’s start before the interview</h3><ul>
+<li>If you are applying online, your resume will inevitably be screened by HR. It may take 10 seconds for a resume to look at HR. Then HR will decide whether your level is Fail or Pass.</li>
+<li>If you are pushing in, if your resume doesn’t have any advantages, even the person pushing you in will not help you.</li>
+</ul>
+<p>In addition, even if you pass the screening, in the subsequent interviews, the interviewer will use your resume to determine whether it is worth his time to interview.</p>
+<p>Therefore, the resume is like a facade of us, it largely determines whether you can enter the next round of interviews.</p>
+<h3 id="From-the-interview"><a href="#From-the-interview" class="headerlink" title="From the interview"></a>From the interview</h3><p>I find that everyone prefers to read the Noodle Scripture, which is understandable, but most of them don’t tell you that many questions are asked under certain conditions. To give a simple example: Generally, your resume will be asked about what you know (Java, data structure, network, and algorithm are the basic questions for everyone). For example, if you write, you will redis, Then the interviewer will most likely ask you some questions about redis. For example: common data types and application scenarios of redis, why is redis so fast in a single thread, the difference between redis and memcached, the redis memory elimination mechanism, and so on.</p>
+<p>So, first of all, you need to be clear: <strong>Do not write on your resume if you do not know</strong>. In addition, ** you need to consider how you can make your highlights stand out in your resume **, for example: what you did in a certain project solves what problem (as long as there is a project, there must be problems to be solved) What technology has been used in your project to improve the overall performance and concurrency?</p>
+<p>Interviews and work are two different things. Smart people lead interviewers to their areas of expertise, while others are led by the interviewers. Although interviews and jobs are two different things, if you want to get a satisfactory offer, you must be strong.</p>
+<h2 id="You-must-know-the-following-points"><a href="#You-must-know-the-following-points" class="headerlink" title="You must know the following points"></a>You must know the following points</h2><ol>
+<li>The HR of most companies say that we do not value education (deceive you!), But if your school is not outstanding, it is difficult to stand out in a bunch of resumes, unless your resume has special highlights, such as : Internship experience at a certain large factory, won the award of a certain competition, etc.</li>
+<li><strong>Most fresh graduates have no work experience or internship to find a job. So if you are a fresh graduate, don’t miss the autumn and spring strokes. If you miss it, you will most likely face social recruitment later. At this time, you may face various obstacles because you have no work experience, and you will not find a good job</strong></li>
+<li><strong>Be careful about what you write on your resume. This is where the interviewer asks a lot of questions;</strong></li>
+<li><strong>It is very important to show your project experience perfectly.</strong></li>
+</ol>
+<h2 id="Two-rules-you-must-understand"><a href="#Two-rules-you-must-understand" class="headerlink" title="Two rules you must understand"></a>Two rules you must understand</h2><h3 id="STAR-LAW-Situation-Task-Action-Result"><a href="#STAR-LAW-Situation-Task-Action-Result" class="headerlink" title="STAR LAW (Situation Task Action Result)"></a>STAR LAW (Situation Task Action Result)</h3><ul>
+<li><strong>Situation:</strong> under what circumstances did things happen;</li>
+<li><strong>Task ::</strong> how do you define your task;</li>
+<li><strong>Action:</strong> For this kind of situation analysis, what action method did you use;</li>
+<li><strong>Result:</strong> What was the result, what did you learn in this situation?</li>
+</ul>
+<p>In short, the STAR law is a way to tell your own story, or a clear and organized composition template. Whatever it is, using this rule reasonably and proficiently can easily explain the logical way in which the interviewer describes things, showing the clarity, orderliness, and logic of his own analysis and elaboration.</p>
+<h3 id="FAB-Rule-Feature-Advantage-Benefit"><a href="#FAB-Rule-Feature-Advantage-Benefit" class="headerlink" title="FAB Rule (Feature Advantage Benefit)"></a>FAB Rule (Feature Advantage Benefit)</h3><ul>
+<li><strong>Feature: What is</strong>;</li>
+<li><strong>Advantage:</strong> Where is better than others;</li>
+<li><strong>Benefit:</strong> What benefits will recruiters get if they hire you.</li>
+</ul>
+<p>In simple terms, this rule is mainly to let your interviewer know your advantages and how it will help the company after recruiting you.</p>
+<h2 id="How-to-write-project-experience"><a href="#How-to-write-project-experience" class="headerlink" title="How to write project experience?"></a>How to write project experience?</h2><p>It is normal to have one or two project experiences on the resume, but very few can really show the project experience to the interviewer. For the project experience, you can consider writing from the following points:</p>
+<ol>
+<li>A feeling for the overall design of the project</li>
+<li>What did you do, what did you do, what role did you play in this project</li>
+<li>From this project you learned those things, used those technologies, and learned the use of new technologies.</li>
+<li>In addition, in the description of the project, it is best to reflect your overall quality, such as how do you coordinate the project team members’ collaborative development or how do you solve it when you encounter a difficult problem? What technology is used to achieve what functions, such as: using redis as a cache to improve access speed and concurrency, using message queues to reduce peaks and drops, and so on.</li>
+</ol>
+<h2 id="How-to-write-professional-skills"><a href="#How-to-write-professional-skills" class="headerlink" title="How to write professional skills?"></a>How to write professional skills?</h2><p>Ask yourself what you would like, and then see what your intended company needs. Generally HR may not know technology very well, so he may look at the keywords of your professional skills when screening resumes. For the skills that the company requires but you don’t, you can spend a few days learning it, and then write on the resume to understand this skill. For example, you can write it like this (excerpt from my resume below, everyone can make some modifications and improvements according to your own situation):</p>
+<ul>
+<li>Computer network, data structure, algorithm, operating system and other basic knowledge: master</li>
+<li>Java Basics: Mastering</li>
+<li>JVM virtual machine (Java memory area, virtual machine garbage algorithm, virtual garbage collector, JVM memory management): master</li>
+<li>High-concurrency, high-availability, high-performance system development: master</li>
+<li>Struts2, Spring, Hibernate, Ajax, Mybatis, JQuery: Master</li>
+<li>SSH integration, SSM integration, SOA architecture: Master</li>
+<li>Dubbo: Master</li>
+<li>Zookeeper: Master</li>
+<li>Common Message Queue: Master</li>
+<li>Linux: Master</li>
+<li>Common MySQL optimization methods: Master</li>
+<li>Spring Boot + Spring Cloud + Docker: Learn</li>
+<li>HDFS, Storm, MapReduce, Hive, Hbase in Hadoop ecology related technologies: understand</li>
+<li>Python basics, some common third-party libraries such as OpenCV, wxpy, wordcloud, matplotlib: familiar</li>
+</ul>
+<h2 id="typographical-considerations"><a href="#typographical-considerations" class="headerlink" title="typographical considerations"></a>typographical considerations</h2><ol>
+<li>Be as concise as possible and not be too frivolous;</li>
+<li>Don’t mistake the capitalization of some technical terms. For example, don’t write MySQL as mysql and Java as java. This is still quite taboo in my opinion, so be sure to pay attention to this detail;</li>
+<li>Adding spaces between Chinese and digital English looks a little more comfortable;</li>
+</ol>
+<h2 id="Other-small-tips"><a href="#Other-small-tips" class="headerlink" title="Other small tips"></a>Other small tips</h2><ol>
+<li>Avoid subjective expressions as much as possible. A few semantically ambiguous adjectives should be concise and clear, and the logical structure should be clear.</li>
+<li>If you have a blog or personal technology stack, writing it will give you a lot of points.</li>
+<li>If your Github is more active, it will add a lot of points for you.</li>
+<li>Pay attention to the authenticity of your resume. Do n’t write things you do n’t know or deceptive content.</li>
+<li>The project experience is recommended to be sorted in reverse chronological order. In addition, the project experience is not so much but highlights.</li>
+<li>If there is too much content, you don’t need to compress the content to one page, and keep the layout clean and tidy.</li>
+<li>At the end of the resume, it is best to add: “Thank you for taking the time to read my resume, and look forward to having the opportunity to work with you.”</li>
+</ol>
+<h2 id="Recommended-tools-sites"><a href="#Recommended-tools-sites" class="headerlink" title="Recommended tools / sites"></a>Recommended tools / sites</h2><p>-Cool resume (MarkDown online resume tool, online preview, edit and generate PDF): <a href="https://johnwhite-leaf.github.io/coolresume">https://johnwhite-leaf.github.io/coolresume</a><br>-<a href="https://github.com/geekcompany/ResumeSample/" target="_blank" rel="noopener">Java programmer resume template</a></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">John White</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://johnwhite-leaf.github.io/articles/42747d96/">https://johnwhite-leaf.github.io/articles/42747d96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/resume/">resume    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/resume-logo.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/articles/e6ac8af0/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/loveLife.jpeg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>Things I Love</span></div></a></div><div class="next-post pull_right"><a href="/articles/ebce7f08/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/johnwhite-leaf/CDN/opengrok-logo.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>Building Android code search server based on opengrok</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'SQRBzXUT1TEvasyltUXgHWsn-gzGzoHsz',
+  appKey:'EOzGyrBHy4fhVTvG1hFatTon',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By John White</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="Scroll to comment"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
